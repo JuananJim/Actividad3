@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    
+    <button  onclick="holaMundo()">Mostrar Hola Mundo</button>
+    <h1 id="mensaje"></h1>
+
+    <button onclick="ventanaEmergente()">Mostrar ventana emergente</button>
+    <h1 id="ventana"></h1>
+
+    <button onclick="sumaSimple()">Suma Simple</button>
+    <h1 id="suma"></h1>
+
+    <button onclick="sumaInteractiva()">Suma interactiva</button>
+    <h1 id="sumaInteractiva"></h1>
+
+    <button onclick="saludoPersonalizado()">Saludo Personalizado</button>
+    <h1 id="saludoPersonalizado"></h1>
+
+    <button onclick="calculoEnLinea()">Cálculo Personalizado</button>
+    <h1 id="calculoEnLinea"></h1>
+
+<script>
+
+    //Ejercicio 1:
+function holaMundo(){
+        
+        
+            var hola="Hola mundo";
+            document.getElementById("mensaje").innerHTML = hola;
+
+        document.getElementById("holamundo").addEventListener("click", holaMundo);
+    }
+
+
+    //Ejercicio 2:
+
+function ventanaEmergente(){
+
+alert("Hola Mundo");
+document.getElementById("ventana").addEventListener("click",ventanaEmergente);
+
+}
+
+//Ejercicio 3:
+
+function sumaSimple(){
+var num1=5;
+var num2=10;
+
+var suma=num1+num2;
+
+alert(suma);
+
+
+}
+
+//Ejercicio 4:
+
+function sumaInteractiva(){
+    var num1=prompt("Dime un número");
+    var num2=prompt("Dime otro número");
+
+    var suma=parseInt(num1)+parseInt(num2);
+
+
+    alert ("La suma es: "+ suma);
+
+    
+}
+
+//Ejercicio 5:
+
+function saludoPersonalizado(){
+
+    var nombre=prompt("¿Cómo te llamas?");
+
+    alert("Hola "+nombre+", bienvenido!");
+
+}
+
+//Ejercicio 6:
+
+function calculoEnLinea(){
+
+    var num1=3;
+    var num2=5;
+
+    var suma=num1+num2;
+
+    document.getElementById("calculoEnLinea").innerHTML=suma;
+}
+
+
+</script>
+    
+    
+</body>
+</html>
+
